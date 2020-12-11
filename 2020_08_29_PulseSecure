@@ -2,14 +2,10 @@
 
 #https://askubuntu.com/questions/1135065/cant-run-pulse-secure-on-ubuntu-19-04-because-libwebkitgtk-1-0-so-0-is-missing
 
-cd /usr/local/pulse/
-
-sudo sed -i "s/UBUNTU_VER\ \=\ 18\ \]/& \|\|\ [\ \$UBUNTU_VER\ \=\ 20 \]/" PulseClient_x86_64.sh
-
-sudo apt-get install libenchant1c2a
-
-/usr/local/pulse/pulseUi
-
+# cd /usr/local/pulse/
+# sudo sed -i "s/UBUNTU_VER\ \=\ 18\ \]/& \|\|\ [\ \$UBUNTU_VER\ \=\ 20 \]/" PulseClient_x86_64.sh
+# sudo apt-get install libenchant1c2a
+# /usr/local/pulse/pulseUi
 
 #above didn't work
 ======================================
@@ -29,7 +25,6 @@ sudo sed -i "s/UBUNTU_VER\ \=\ 18\ \]/& \|\|\ [\ \$UBUNTU_VER\ \=\ 20 \]/" Pulse
 sudo /usr/local/pulse/PulseClient_x86_64.sh install_dependency_packages
 
 /usr/local/pulse/pulseUi
-
 
 
 =========================================
